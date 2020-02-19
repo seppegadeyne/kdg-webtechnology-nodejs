@@ -9,8 +9,6 @@ module.exports = function (directory, filter, callback) {
 
     fs.readdir(directory, (err, files) => {
         if (err) return callback(err);
-
-        files = files.filter(file => path.extname(file) === '.' + filter);
-        return callback(null, files);
+        return callback(null, files.filter(file => path.extname(file) === '.' + filter));
     });
 };
