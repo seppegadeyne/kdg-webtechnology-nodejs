@@ -5,8 +5,8 @@ const fs = require('fs');
 
 const server = http.createServer(function (request, response) {
     console.log('Request was made: ' + request.url);
-    response.writeHead(200, {'Content-Type': 'text/html'});
-    const myReadStream = fs.createReadStream(__dirname + '/index.html', 'utf8');
+    response.writeHead(200, {'Content-Type': 'text/plain'});
+    const myReadStream = fs.createReadStream(__dirname + '/readme.txt', 'utf8');
     myReadStream.pipe(response);
 });
 
