@@ -2,6 +2,6 @@
 
 const fs = require('fs');
 
-fs.readFile(process.argv[2], 'utf8', function(err, buffer) {
-    !err && console.log(buffer.split('\n').length-1);
+fs.readFile(process.argv[2], 'utf8', function(error, buffer) {
+    !error && console.log(buffer.split('\n').length-1);
 });

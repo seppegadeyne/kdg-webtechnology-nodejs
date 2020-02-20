@@ -1,9 +1,10 @@
 'use strict';
 
-let total = 0;
+console.log(process.argv
+	.slice(2, process.argv.length)
+	.reduce((accumulator, value) => accumulator + Number(value), 0)
+);
 
-process.argv.forEach( (value, index) => {
-	if (index > 1) total += Number(value);
-});
 
-console.log(total);
+
+
