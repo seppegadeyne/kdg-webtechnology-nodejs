@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
-    "develop": "nodemon app.js"
+    "refresh": "nodemon app.js",
+    "debug": "nodemon --inspect"
   },
   "keywords": [
     "fun",
@@ -15,6 +16,7 @@
   "author": "Seppe Gadeyne",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^3.0.1",
     "express": "^4.17.1",
     "nodemon": "^2.0.2"
   }
