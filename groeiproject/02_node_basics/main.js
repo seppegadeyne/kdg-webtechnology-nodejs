@@ -4,7 +4,7 @@ const json = require('../persons');
 const fs = require('fs');
 const writeSub = require('./sub');
 
-let jsonApp = function () {
+const jsonApp = function () {
     fs.mkdtemp('sub', (err, folder) => {
         if(err) return console.error(err);
         process.chdir(folder);
