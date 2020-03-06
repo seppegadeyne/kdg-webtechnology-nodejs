@@ -13,16 +13,13 @@ function httpGet(url) {
     })
 }
 
-httpGet(process.argv[2])
-    .then( function (buffer) {
+httpGet(process.argv[2]).then( function (buffer) {
         console.log(buffer);
-        httpGet(process.argv[3])
-            .then( function(buffer) {
+        httpGet(process.argv[3]).then( function(buffer) {
                 console.log(buffer);
-                httpGet(process.argv[4])
-                    .then(function (buffer) {
+                httpGet(process.argv[4]).then(function (buffer) {
                         console.log(buffer);
-                    })
-            })
-    });
+                })
+        })
+});
 
