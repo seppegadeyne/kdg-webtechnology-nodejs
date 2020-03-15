@@ -3,7 +3,7 @@ const util = require('util');
 
 let Person = function (name) {
     this.name = name;
-};
+}
 
 util.inherits(Person, events.EventEmitter);
 
