@@ -25,11 +25,18 @@ httpGet(process.argv[2]).then( function (buffer) {
 });
  */
 
+
 async function showGet() {
     console.log(await httpGet(process.argv[2]));
     console.log(await httpGet(process.argv[3]));
     console.log(await httpGet(process.argv[4]));
 }
-
 showGet();
+
+
+/*
+Promise.all([httpGet(process.argv[2]), httpGet(process.argv[3]), httpGet(process.argv[4])])
+    .then(console.log)
+    .catch(console.error);
+ */
 
