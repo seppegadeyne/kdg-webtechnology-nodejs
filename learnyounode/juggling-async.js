@@ -25,13 +25,13 @@ httpGet(process.argv[2]).then( function (buffer) {
 });
  */
 
-
-async function showGet() {
+const show = async () => {
     console.log(await httpGet(process.argv[2]));
     console.log(await httpGet(process.argv[3]));
     console.log(await httpGet(process.argv[4]));
-}
-showGet();
+};
+
+show();
 
 
 /*
