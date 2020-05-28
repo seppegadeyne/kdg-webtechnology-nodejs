@@ -1,10 +1,10 @@
 'use strict';
 
-const http = require('http');
+const https = require('https');
 
 function httpGet(url) {
     return new Promise( function (resolve, reject) {
-        http.get(url, function (res) {
+        https.get(url, function (res) {
             let buffer = '';
             res.on("data", data => buffer += data);
             res.on("end", () => resolve(buffer));
@@ -31,12 +31,25 @@ const show = async () => {
     console.log(await httpGet(process.argv[4]));
 };
 
-show();
+//show();
+
+
+httpGet('https://straffesites.be')
+    .then(buffer => {
+        console.log(buffer);
+        return httpGet('https://google.be');
+    })
+    .then(buffer => {
+        console.log(buffer);
+        return httpGet('https://vercel.com');
+    })
+    .then(buffer => console.log(buffer))
+    .catch(error => console.error(error));
 
 
 /*
 Promise.all([httpGet(process.argv[2]), httpGet(process.argv[3]), httpGet(process.argv[4])])
     .then(console.log)
     .catch(console.error);
- */
+*/
 
