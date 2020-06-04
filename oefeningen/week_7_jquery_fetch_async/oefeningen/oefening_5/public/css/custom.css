@@ -1,0 +1,29 @@
+#navigate {
+    width: 100%;
+    list-style: none;
+    overflow: hidden;
+    margin: 0 auto;
+    background: lightgray;
+   padding: 0px;
+}
+
+.navi_sec {
+    float: left;
+    padding: 10px;
+}
+
+.navi_sec a {
+    text-decoration: none;
+    color: black;
+}
+
+.active {
+    border-bottom: 2px solid tomato;
+}
+
+.loading {
+	background: transparent url('../images/loading.gif') center no-repeat;
+	background-size: contain
+}
+
+

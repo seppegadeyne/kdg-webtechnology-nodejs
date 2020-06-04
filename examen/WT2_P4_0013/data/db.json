@@ -1,0 +1,181 @@
+{
+  "developers": [
+    {
+      "id": 1,
+      "name": "Nintendo",
+      "founding_date": "1989-09-23",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Nintendo.svg/399px-Nintendo.svg.png",
+      "nr_of_employees": 5944
+    },
+    {
+      "id": 2,
+      "name": "Valve Corporation",
+      "founding_date": "1996-08-24",
+      "image": "https://nl.wikipedia.org/wiki/Valve_Corporation#/media/Bestand:Valve_logo.svg",
+      "nr_of_employees": 360
+    },
+    {
+      "id": 3,
+      "name": "Rocksgd",
+      "founding_date": "1998-12-011",
+      "image": "https://nl.wikipedia.org/wiki/Rockstar_Games#/media/Bestand:Rockstar_Games_Logo.svg",
+      "nr_of_employees": 2192
+    },
+    {
+      "id": 4,
+      "name": "Electronic Arts",
+      "founding_date": "1982-05-23",
+      "image": "https://nl.wikipedia.org/wiki/Electronic_Arts#/media/Bestand:Electronic-Arts-Logo.svg",
+      "nr_of_employees": 9300
+    },
+    {
+      "id": 5,
+      "name": "Activision Blizzard",
+      "founding_date": "2008-07-09",
+      "image": "https://nl.wikipedia.org/wiki/Activision_Blizzard#/media/Bestand:Activisionblizzard.jpg",
+      "nr_of_employees": 9900
+    },
+    {
+      "id": 6,
+      "name": "Ubisoft",
+      "founding_date": "1986-03-12",
+      "image": "https://nl.wikipedia.org/wiki/Ubisoft#/media/Bestand:Logo_de_Ubisoft_2017.png",
+      "nr_of_employees": 15985
+    },
+    {
+      "id": 7,
+      "name": "Sega Games",
+      "founding_date": "1960-06-03",
+      "image": "https://nl.wikipedia.org/wiki/Sega#/media/Bestand:SEGA_logo.svg",
+      "nr_of_employees": 11254
+    },
+    {
+      "id": 8,
+      "name": "BioWare",
+      "founding_date": "1995-02-01",
+      "image": "https://nl.wikipedia.org/wiki/BioWare#/media/Bestand:BioWare_logo.svg",
+      "nr_of_employees": 823
+    },
+    {
+      "id": 9,
+      "name": "Naughty Dog Inc",
+      "founding_date": "1984-09-29",
+      "image": "https://nl.wikipedia.org/wiki/Naughty_Dog#/media/Bestand:Naughty_Dog_logo.svg",
+      "nr_of_employees": 316
+    },
+    {
+      "id": 10,
+      "name": "Capcom",
+      "founding_date": "1979-05-30",
+      "image": "https://nl.wikipedia.org/wiki/Capcom#/media/Bestand:Capcom_logo.png",
+      "nr_of_employees": 2832
+    },
+    {
+      "id": 11,
+      "name": "Mojang",
+      "founding_date": "2009-05-01",
+      "image": "https://nl.wikipedia.org/wiki/Mojang_AB#/media/Bestand:Mojang_logo.svg",
+      "nr_of_employees": 70
+    },
+    {
+      "id": 12,
+      "name": "Infinity Ward",
+      "founding_date": "2002-05-14",
+      "image": "https://cdn.gamersnet.nl/wp-content/uploads/2018/12/Infinity-Ward-Logo.png",
+      "nr_of_employees": 537
+    },
+    {
+      "id": 13,
+      "name": "Blizzard Entertainment Inc",
+      "founding_date": "1991-02-08",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Blizzard_Entertainment_Logo.svg/1200px-Blizzard_Entertainment_Logo.svg.png",
+      "nr_of_employees": 4600
+    },
+    {
+      "id": 14,
+      "name": "Konami",
+      "founding_date": "1969-03-21",
+      "image": "https://nl.wikipedia.org/wiki/Konami#/media/Bestand:Konami_4th_logo_2.svg",
+      "nr_of_employees": 1659
+    },
+    {
+      "id": 15,
+      "name": "Bethesda Game Studios",
+      "founding_date": "1986-06-26",
+      "image": "https://nl.wikipedia.org/wiki/Bethesda_Game_Studios#/media/Bestand:Bethesda_Game_Studios_logo.svg",
+      "nr_of_employees": 400
+    }
+  ],
+  "games": [
+    {
+      "id": 1,
+      "name": "Pokémon Sword and Shield",
+      "release_date": "2019-11-15",
+      "first_console": "Nintendo Switch",
+      "developerId": 1
+    },
+    {
+      "id": 2,
+      "name": "Super Smash Bros. Ultimate",
+      "release_date": "2018-12-07",
+      "first_console": "Nintendo Switch",
+      "developerId": 1
+    },
+    {
+      "id": 3,
+      "name": "Grand Theft Auto V",
+      "release_date": "2013-09-17",
+      "first_console": "Playstation 3",
+      "developerId": 3
+    },
+    {
+      "id": 4,
+      "name": "Red Dead Redemption 2",
+      "release_date": "2018-10-26",
+      "first_console": "PlayStation 4",
+      "developerId": 3
+    },
+    {
+      "id": 5,
+      "name": "Call of Duty: WWII",
+      "release_date": "2017-11-03",
+      "first_console": "Playstation 4",
+      "developerId": 5
+    },
+    {
+      "id": 6,
+      "name": "Tom Clancy's Rainbow Six Siege",
+      "release_date": "2015-12-01",
+      "first_console": "Playstation 4",
+      "developerId": 6
+    },
+    {
+      "id": 7,
+      "name": "Tetris",
+      "release_date": "1984-06-06",
+      "first_console": "NES",
+      "developerId": 7
+    },
+    {
+      "id": 8,
+      "name": "Anthem",
+      "release_date": "2018-12-08",
+      "first_console": "Xbox One",
+      "developerId": 8
+    },
+    {
+      "id": 9,
+      "name": "The Last of Us",
+      "release_date": "2013-06-14",
+      "first_console": "Playstation 3",
+      "developerId": 9
+    },
+    {
+      "id": 10,
+      "name": "Monster Hunter: World",
+      "release_date": "2017-12-09",
+      "first_console": "PC",
+      "developerId": 10
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+.container {
+    margin: 100px;
+}
+
+.circle {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+}
+
+.container:hover {
+    width: 200px;
+}
+
+.circle0 {
+    background: PaleTurquoise;
+    transition: all 1.5s linear;
+}
+.circle1 {
+    background: salmon;
+    transition: all 1.5s ease;
+}
+
+.circle2 {
+    background: lightskyblue;
+    transition: all 1.5s ease-in;
+}
+
+.circle3 {
+    background: khaki;
+    transition: all 1.5s ease-out;
+}
+
+.circle4 {
+    background: mediumturquoise;
+    transition: all 1.5s ease-in-out;
+}
+
+.circle5 {
+    background: thistle;
+    transition: all 1.5s cubic-bezier(0,1,.98,0);
+}

@@ -1,0 +1,138 @@
+@import "variables";
+@import "mixins";
+
+li.#{$class} {
+    color: $color;
+    #{$bg}-color: #cccccc;
+}
+
+body {
+    font-family: $font;
+    color: $text-color;
+    background-color: $color;
+}
+
+h1 {
+    color: white;
+}
+
+nav {
+    ul {
+        display: flex;
+        list-style: none;
+
+        li {
+            margin-right: 1rem;
+
+            &:hover {
+                cursor: pointer;
+                color: red;
+            }
+        }
+    }
+}
+
+.wrapper {
+    @include flex;
+}
+
+.container {
+    @include flex;
+}
+
+// Sass berekeningen
+$title: "Sass";
+$font-size: 16px;
+$def_padding: 2em;
+
+.header {
+    background: aquamarine;
+
+    h1 {
+        padding: ($def_padding / 2);
+        color: palevioletred;
+        font-size: $font-size * 3;
+
+        &::before {
+            content: 'Module: ' + $title;
+        }
+    }
+}
+
+@mixin theme-title($font-size, $padding: 2em) {
+    padding: ($padding / 2);
+    font-size: $font-size * 2;
+    background: #428ECE;
+}
+
+.header {
+    h1 {
+        @include theme-title(24px, 4em);
+        color: antiquewhite;
+    }
+}
+
+.footer {
+    @include theme-title(8px);
+}
+
+$px-per-em: 16;
+@function px2em($px) {
+    @return ($px / $px-per-em) + em;
+}
+
+h1 {
+    font-size: px2em(64);
+}
+
+@mixin set-theme($theme) {
+    $bg: white;
+
+    @if $theme == dark {
+        $bg: black;
+    } @else if $theme == dusk {
+        $bg: #444;
+    } @else {
+        $bg: white;
+    }
+    background: $bg;
+    color: invert($bg);
+}
+
+body {
+    @include set-theme(dark);
+}
+
+@for $i from 1 through 12 {
+
+}
+
+@for $i from 1 to 13 {
+
+}
+
+$i: 1;
+@while $i < 13 {
+    $i: $i + 1;
+}
+
+@each $key, $value in (h1:20px, h2:16px, h3:14px) {
+
+}
+
+$class-colors: (
+        xs:crimson,
+        sm:salmon,
+        md: midnightblue,
+        lg:lawngreen
+);
+$columns: 12;
+@each $class, $color in $class-colors {
+    @for $i from 1 through 12 {
+        .col-#{$class}-#{$i} {
+            width: percentage(($i /12));
+            background-color: $color;
+            color:invert($color);
+        }
+    }
+}
