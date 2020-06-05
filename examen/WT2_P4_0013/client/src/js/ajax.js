@@ -54,11 +54,11 @@ function pasAan(id) {
 
     fetch(url, options)
         .then(response => {
-            if (response.ok) {
-                let result = response.json();
-                toonentiteit(result.id);
-                return result;
-            }
+            if (response.ok) return response.json();
+            return Promise.reject(response);
+        })
+        .then(response => {
+            toonentiteit(response.id);
         })
         .catch(error => {
             console.error('Error: ', error);
