@@ -43,7 +43,7 @@ function merge(original,modifier){
 		original[attribute]= modifier[attribute]
 	}
 	// elke aanpassing krijgt een uniek transactie nummer (uuid)
-	original.uuid = uuid5(Date.now().toString(),'94bd0f10-54cb-4571-9a6a-f8a74dcd5e')
+	//original.uuid = uuid5(Date.now().toString(),'94bd0f10-54cb-4571-9a6a-f8a74dcd5e')
 	return original
 }
 
@@ -57,9 +57,8 @@ router.patch('/:id', (req,res) => {
 		let developer = {...results[0], ...req.body};
 		// Die merge functie begrijp ik niet goed welke waarden hierin moeten komen.
 		// Zie developer object met nieuwe waarden.
-		merge(results[0], req.body);
 		res.status(200);
-		res.send("Update succesvol");
+		res.json(merge(results[0], req.body));
 	} else {
 		res.status(404);
 		res.send("404: Record not found");
