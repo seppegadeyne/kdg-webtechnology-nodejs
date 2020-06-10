@@ -1,6 +1,6 @@
 // TODO Opdracht 3: voeg de naam van je entiteit toe aan onderstaande Url
 //       voorbeeld: const Url = 'http://localhost:3000/persons/'
-const Url = 'http://localhost:3000/devlopers/'
+const Url = 'http://localhost:3000/developers/'
 
 document.getElementById("xl-1222").style.maxWidth="1222px"
 
